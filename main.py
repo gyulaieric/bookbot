@@ -21,10 +21,11 @@ def main():
 
     print("----------- Word Count ----------")
     word_count = get_word_count(book)
-    character_count = get_character_count(book)
     print(f"Found {word_count} total words")
 
     print("--------- Character Count -------")
+    character_count = get_character_count(book)
+    
     for pair in sort_character_dictionary(character_count):
         if(not pair["char"].isalpha()):
             continue
